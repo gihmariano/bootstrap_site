@@ -13,52 +13,95 @@
   </head>
   <body>
   <!--Iniciar tag nav-->
-   <nav class ="navbar navbar-expand-lg navbar-light bg-light"> 
+   <nav class ="navbar navbar-expand-lg navbar-dark bg-gradient-info"> 
 
-      <a class="navbar-brand" href="#">Curso</a>
-
+      <div class="container">
+          <a class="navbar-brand h1 mb-0" href="#"> Loja </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
         <span class="navbar-toggler-icon"></span>     
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSite">
+      </button>    
 
-         <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarSite">
+         <ul class="navbar-nav mr-auto">
            
            <li class="nav-item">
-
              <a class="nav-link" href="#"> Inicio </a>
-
            </li>
             <li class="nav-item">
-
              <a class="nav-link" href="#"> Perfil </a>
-
             </li>
             <li class="nav-item">
-
              <a class="nav-link" href="#"> Serviços </a>
-
            </li>
            <li class="nav-item">
-
              <a class="nav-link" href="#"> Depoimentos </a>
-
            </li>
            <li class="nav-item">
-
              <a class="nav-link" href="#"> Contato </a>
-
            </li>
-
          </ul>
 
-      </div>
-
-  
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                  Social
+                </a>
+                <div class="dropdown-menu">
+                   <a class="dropdown-item" href="#">Facebook</a>
+                   <a class="dropdown-item" href="#">Twitter</a>
+                   <a class="dropdown-item" href="#">Instagram</a>
+                </div>
+                </li>
+            </ul>
+                      <form class="form-inline">
+              <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+              <button class="btn btn-dark" type="submit"> OK </button>
+            </form>
+        </div>
+      </div>  
   
    </nav>
+   <div id="carouselSite" class="carousel slide" data-ride="carousel">
+     <ol class="carousel-indicators">
+       <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+       <li data-target="#carouselSite" data-slide-to="1" ></li>
+       <li data-target="#carouselSite" data-slide-to="2" ></li>
+     </ol>
 
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="img/bikcraft-esporte-1.jpg" class="img-fluid d-block w-100">
+         <div class="carousel-caption">
+           <h3>Pratique seu esporte favorito!!</h3>
+           <p>Temos a bicicleta correta para cada tipo de competição.</p>
+         </div>
+       </div>
+
+       <div class="carousel-item">
+          <img src="img/bikcraft-passeio-1.jpg" class="img-fluid d-block w-100">
+          <div class="carousel-caption">
+              <h3>Para lazer ou transporte?</h3>
+              <p>Nossa loja é especializada em bicicletas, venha adquirir a sua!</p>
+            </div>
+       </div>
+       <div class="carousel-item">
+          <img src="img/bikcraft-retro-1.jpg" class="img-fluid d-block w-100">
+          <div class="carousel-caption">
+              <h3>Gosta de bicicletas retrô?</h3>
+              <p>Temos bicicletas dos anos 60!! Venha nos conhecer!</p>
+            </div>
+       </div>
+
+     </div>
+     <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+       <span class="carousel-control-prev-icon"></span>
+       <span class="sr-only">Anterior</span>
+     </a>
+     <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+       <span class="carousel-control-next-icon"></span>
+       <span class="sr-only">Avançar</span>
+      </a>  
+   </div>
    
 
     <!-- Optional JavaScript -->
